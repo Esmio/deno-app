@@ -1,7 +1,7 @@
-import * as mod from 'https://deno.land/x/dotenv/mod.ts';
-import Config from '../interfaces/Config.ts';
+import { config as dotenv } from 'https://deno.land/x/dotenv@v3.2.0/mod.ts';
+import Config from '@/interfaces/Config.ts';
 
-await mod.config();
+dotenv({ export: true });
 
 const config: Config = {
   base_url: Deno.env.get('BASE_URL') || 'http://localhost:8000',

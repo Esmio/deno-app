@@ -1,7 +1,7 @@
 import { Head } from '$fresh/runtime.ts';
 import { Handlers, PageProps } from '$fresh/server.ts';
-import Counter from '../islands/Counter.tsx';
-import User from '../models/User.ts';
+import Counter from '@/islands/Counter.tsx';
+import User from '@/models/User.ts';
 
 export const handler: Handlers<User[]> = {
   async GET(_, ctx) {
@@ -18,6 +18,7 @@ export default function Home({ data }: PageProps<User[]>) {
       </Head>
       <div class="p-4 mx-auto max-w-screen-md">
         There are {data.length} users!
+        <Counter start={5} />
       </div>
     </>
   );
