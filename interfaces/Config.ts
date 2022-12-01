@@ -1,4 +1,4 @@
-import { PostgresOptions } from 'denodb';
+import { PostgresOptions } from "denodb";
 
 export default interface Config {
   base_url: string;

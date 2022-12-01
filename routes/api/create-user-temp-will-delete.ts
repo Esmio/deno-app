@@ -1,6 +1,6 @@
-import { HandlerContext } from '$fresh/server.ts';
+import { HandlerContext } from "$fresh/server.ts";
 
-import User from '@/models/User.ts';
+import User from "@/models/User.ts";
 
 class JsonResponse extends Response {
   constructor(body?: Record<string, unknown> | BodyInit, init?: ResponseInit) {
@@ -12,7 +12,7 @@ class JsonResponse extends Response {
     }
     init.headers = {
       ...init.headers,
-      'content-type': 'application/json',
+      "content-type": "application/json",
     };
     super(JSON.stringify(body), init);
   }
@@ -20,7 +20,7 @@ class JsonResponse extends Response {
 
 export const handler = async (
   _req: Request,
-  _ctx: HandlerContext
+  _ctx: HandlerContext,
 ): Promise<Response> => {
   const user = await User.create({});
   return new JsonResponse(user);

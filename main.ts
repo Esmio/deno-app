@@ -4,13 +4,13 @@
 /// <reference lib="dom.asynciterable" />
 /// <reference lib="deno.ns" />
 
-import connect from './utils/db.ts';
+import connect from "./utils/db.ts";
 
-import { start } from '$fresh/server.ts';
-import manifest from './fresh.gen.ts';
+import { start } from "$fresh/server.ts";
+import manifest from "./fresh.gen.ts";
 
-import twindPlugin from '$fresh/plugins/twind.ts';
-import twindConfig from './twind.config.ts';
+import twindPlugin from "$fresh/plugins/twind.ts";
+import twindConfig from "./twind.config.ts";
 
 connect();
 

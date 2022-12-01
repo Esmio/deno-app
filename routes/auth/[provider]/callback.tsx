@@ -1,7 +1,7 @@
-import { Handlers } from '$fresh/server.ts';
-import { URL } from 'https://deno.land/std@0.106.0/node/url.ts';
-import config from '@/utils/config.ts';
-import oauth from '@/utils/oauth.ts';
+import { Handlers } from "$fresh/server.ts";
+import { URL } from "https://deno.land/std@0.106.0/node/url.ts";
+import config from "@/utils/config.ts";
+import oauth from "@/utils/oauth.ts";
 
 export const handler: Handlers = {
   async GET(request, ctx) {

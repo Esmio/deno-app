@@ -10,5 +10,9 @@ export default class User extends Model {
       unique: true,
       autoIncrement: true,
     },
+    display_name: {
+      type: DataTypes.STRING,
+      length: 100,
+    },
   };
 }
