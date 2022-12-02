@@ -1,4 +1,5 @@
 import { DataTypes, Model } from 'denodb';
+import SocialProfile from './SocialProfile.ts';
 
 export default class User extends Model {
   static table = 'user';
@@ -15,4 +16,7 @@ export default class User extends Model {
       length: 100,
     },
   };
+  static social_profiles() {
+    return this.hasMany(SocialProfile);
+  }
 }
