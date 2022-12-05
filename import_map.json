@@ -9,6 +9,7 @@
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
     "denodb": "https://deno.land/x/denodb@v1.1.0/mod.ts",
+    "denodb/deps": "https://deno.land/x/denodb@v1.1.0/deps.ts",
     "@/": "./",
     "zod": "https://deno.land/x/zod@v3.19.1/mod.ts",
     "dotenv": "https://deno.land/x/dotenv@v3.2.0/mod.ts"

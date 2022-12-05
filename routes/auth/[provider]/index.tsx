@@ -9,6 +9,6 @@ export const handler: Handlers = {
       const location = provider.code.createLink();
       return Response.redirect(location);
     }
-    return Response.redirect(config.base_url);
+    return Response.redirect(config!.base_url);
   },
 };

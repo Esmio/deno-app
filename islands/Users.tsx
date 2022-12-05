@@ -1,5 +1,4 @@
-import { useEffect, useState } from "preact/hooks";
-import { Button } from "@/components/Button.tsx";
+import { useEffect, useState } from 'preact/hooks';
 
 interface UsersProps {
   start: number;
@@ -9,7 +8,7 @@ export default function Users() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     (async () => {
-      const response = await fetch("/api/users");
+      const response = await fetch('/api/users');
       const json = await response.json();
       setUsers(json);
     })();

@@ -13,9 +13,7 @@ export default class SocialProfile extends Model {
     },
     user_id: {
       type: DataTypes.INTEGER,
-      primaryKey: true,
       unique: true,
-      autoIncrement: true,
     },
     provider_type: DataTypes.enum(['discord', 'twitch', 'google']),
     // TODO: add an index using another language
